@@ -1,3 +1,7 @@
+[Instruções/Instructions](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub/base-apparel-coming-soon-page-3J5CXxMzB)
+
+[Resultado/Result](https://leonardoth.github.io/Base-Apparel-coming-soon-page/)
+
 You'll get your first sprinkling of JavaScript in this challenge. You'll need to validate the form when it's submitted. Oh, and there's a sneaky layout order swap with the written content and the image from desktop to mobile.
 
 ### Brief
