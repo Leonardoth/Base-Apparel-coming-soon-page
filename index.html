@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Coming Soon</title>
+</head>
+<body>
+  <div class='desktop__box'>
+    <div class='main__content'>
+      <img class='logo__image' src="images/logo.svg" alt="Logo da Base Apparel">
+      <img class='main__image__mobile' src="images/hero-mobile.jpg" alt="Modelo olhando para a câmera">
+      <h1>We're <strong class="h1__strong">coming soon</strong></h1>
+      
+      <p class='main__text'>
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      
+      <form class='form' onsubmit="verifyEmail(event)" >
+        <input onchange='inputChanged(event)' id='field__email' class='form__input' type='text'  placeholder="Email Address" required/>
+        <span class='error__sign'></span>
+        <label class='error__message'>Please provide a valid email</label>
+        <button class='form__button' type='submit'>
+          <img src="images/icon-arrow.svg" alt="Seta para a direita">
+        </button>
+      </form>
+    </div>
+    <img class='main__image__desktop' src="images/hero-desktop.jpg" alt="Modelo olhando para a câmera">
+  </div>
+    
+  </body>
+</html>

@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root{
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    --Gradient-1: 135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%);
+    --Gradient-2: 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%);
+    --default-font-size: 16px;
+    --default-font-family: 'Josefin Sans', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 600;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: var(--default-font-family);
+    font-size: var(--default-font-size);
+}
+
+.logo__image{
+    margin: 20px;
+    width: 100px;
+}
+.main__image__mobile{
+    display: block;
+    width: 100%;
+}
+.main__image__desktop{
+    display: none;
+}
+
+
+h1{ 
+    letter-spacing: 8px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 50%;
+    text-transform: uppercase ;
+    color: var(--Desaturated-Red);
+    font-weight: var(--font-weight-light);
+}
+
+h1 strong{
+    font-weight: var(--font-weight-bold);
+    color: var(--Dark-Grayish-Red);
+}
+
+.main__text{
+    color: var(--Desaturated-Red);
+    max-width: 300px;
+    font-size: 14px;
+    margin: auto;
+    line-height: 24px;
+    text-align: center;
+}
+
+form{
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    max-width: 300px;
+    margin-bottom: 80px;
+    background: linear-gradient(var(--Gradient-1));
+    border-radius: 50px;
+    padding: 5px;
+}
+
+
+.form__input{
+    box-sizing: border-box;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+}
+.form__input::placeholder{
+    color: var(--Desaturated-Red);
+}
+
+.form__input:invalid{
+    color: red;
+}
+
+.error__sign,
+.error__message{
+    position: absolute;
+    opacity: 0;
+}
+.error__sign{
+    position: absolute;
+    display: block;
+    text-align: center;
+    bottom: 20px;
+    right: 100px;
+    background-image: url(images/icon-error.svg);
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat;
+}
+
+.error__message{
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    font-size: 12px;
+    color: var(--Desaturated-Red);
+}
+.form__input.invalid + .error__sign,
+.form__input.invalid + .error__sign + .error__message{
+    opacity: 1;
+}
+
+.form__button{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 90px;
+    height: 100%;
+    background: linear-gradient(var(--Gradient-2));
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: all ease-in-out 100ms;
+}
+
+.form__button:hover,
+.form__button:active{
+    cursor: pointer;
+    filter:brightness(120%);
+    box-shadow: 0px 5px 10px var(--Desaturated-Red);
+}
+
+@media (min-width: 700px){
+    h1{
+        max-width: 200px;
+    }
+
+    footer{
+        text-align: center;
+    }
+}
+
+@media (min-width: 1000px){
+    body{
+        background: url(images/bg-pattern-desktop.svg);
+    }
+
+    .main__image__desktop{
+        display: block;
+    }
+
+    .desktop__box{
+        position: relative;
+        margin: auto;
+        margin-top: 20px;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        height: 500px;
+        width: fit-content;
+        max-width: 1000px;
+        box-shadow: 2px 2px 20px rgba(177, 177, 177, 0.479);
+    }
+    .logo__image{
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    h1, 
+    .main__text{
+        margin-left: 100px;
+        text-align: left;
+    }
+    form{
+        margin-left: 100px;
+    }
+    .main__image__mobile{
+        display: none;
+    }
+    .main__content{
+        max-height: 100%;
+        align-self: center;
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .desktop__box{
+        margin-top: 5vh;
+    }
+}
