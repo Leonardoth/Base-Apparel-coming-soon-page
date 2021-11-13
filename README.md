@@ -1,4 +1,4 @@
-[Instruções/Instructions](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0/hub/base-apparel-coming-soon-page-3J5CXxMzB)
+[Instruções/Instructions](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
 
 [Resultado/Result](https://leonardoth.github.io/Base-Apparel-coming-soon-page/)
 
